@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TopShelf.Extensions;
@@ -14,7 +15,6 @@ namespace TopShelf.Controllers
         {
 
             PlaylistListModel  playlists = await GetPlaylists();
-
 
             return View(playlists);
         }
